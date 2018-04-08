@@ -4,7 +4,7 @@ import { MainHeader } from '.';
 class App extends Component {
   render() {
     return (
-      <main className="App">
+      <main>
         <MainHeader />
       </main>
     );

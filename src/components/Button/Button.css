@@ -1,0 +1,21 @@
+.button {
+  border-radius: 5px;
+	font-weight: 100;
+	text-align: center;
+	background-color: #00d1b2;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #F2EFDF;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border: 0;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #03907b;
+}
