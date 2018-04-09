@@ -5,7 +5,7 @@ const Overlay = ({onClick}) => (
   <div
     className={Styles.Overlay}
     onClick={onClick}
-    ></div>
+  ></div>
 );
 
 export default Overlay;
