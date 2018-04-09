@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { OfferCheckbox } from '..'
+import { OfferCheckbox, Button } from '..'
 import Styles from './InsuranceForm.css';
 
 class InsuranceForm extends Component {
@@ -15,12 +15,14 @@ class InsuranceForm extends Component {
       totalPrice: 0
     }
 
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.addToSelected = this.addToSelected.bind(this);
     this.removeFromSelected = this.removeFromSelected.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
+    alert(`Total price is: ${this.state.totalPrice.toFixed(2)}€`)
   }
 
   addToSelected(id) {
@@ -73,6 +75,11 @@ class InsuranceForm extends Component {
         <p className={Styles.total}>Total:
           <span>{`${this.state.totalPrice.toFixed(2)}€`}</span>
         </p>
+        <Button
+          type="submit"
+          text="OK"
+          disabled={!this.state.selected.length}
+         />
       </form>
     );
   }
