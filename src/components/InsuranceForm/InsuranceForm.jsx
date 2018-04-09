@@ -22,7 +22,7 @@ class InsuranceForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    alert(`Total price is: ${this.state.totalPrice.toFixed(2)}€`)
+    this.props.onSubmit();
   }
 
   addToSelected(id) {

@@ -8,7 +8,7 @@ const InsuranceTypeModal = ({close}) => (
       className={Styles.ModalClose}
       onClick={close}
     ></button>
-    <InsuranceForm />
+    <InsuranceForm onSubmit={close} />
   </div>
 )
 
