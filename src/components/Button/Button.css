@@ -17,3 +17,8 @@
 .button:focus {
   background-color: #03907b;
 }
+
+.button:disabled {
+  background-color: #03907b;
+  cursor: not-allowed;
+}
