@@ -1,0 +1,54 @@
+.modal {
+  position: absolute;
+  width:  900px;
+	top: 10%;
+	left: calc(50% - 450px);
+	background-color: #fff;
+	color: #333;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	z-index: 5;
+}
+
+.modalClose {
+  font-size: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: none;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.modalClose:hover {
+  background-color: rgba(0,0,0, 0.1);
+  transform: rotate(135deg);
+}
+
+.modalClose:before,
+.modalClose:after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  display: block;
+}
+
+.modalClose:before {
+  width: 70%;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modalClose:after {
+  width: 1px;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

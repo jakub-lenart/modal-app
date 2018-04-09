@@ -1,0 +1,15 @@
+.formHeader {
+  text-align: center;
+}
+
+.total {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+.total span {
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  margin-left: 20px;
+}

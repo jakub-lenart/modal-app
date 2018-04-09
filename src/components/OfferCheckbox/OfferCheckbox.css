@@ -1,0 +1,44 @@
+.checkboxWrapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.checkboxLabel {
+  display: block;
+  padding: 15px 50px;
+  position: relative;
+  transition: background-color 0.2s ease;
+  border: 1px solid #211426;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.checkboxWrapperActive,
+.checkboxLabel:hover {
+  background-color: aliceblue;
+}
+
+.checkboxLabel span {
+  display: block;
+}
+
+.checkbox {
+  position: absolute;
+  height: 20px;
+  top: calc(50% - 10px);
+  left: 20px;
+  margin: 0;
+  z-index: 5;
+}
+
+.price {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: normal;
+  font-weight: 700;
+  margin-top: 10px;
+}
