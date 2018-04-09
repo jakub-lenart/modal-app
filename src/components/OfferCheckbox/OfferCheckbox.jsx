@@ -20,20 +20,20 @@ class OfferCheckbox extends Component {
 
   render() {
     const wrapperClassNames = cx({
-      [Styles.checkboxWrapper]: true,
-      [Styles.checkboxWrapperActive]: this.state.isChecked
+      [Styles.CheckboxWrapper]: true,
+      [Styles.CheckboxWrapperActive]: this.state.isChecked
     })
 
     return (
       <div className={wrapperClassNames}>
         <input
-          className={Styles.checkbox}
+          className={Styles.Checkbox}
           type="checkbox"
           id={this.props.id}
           onChange={this.handleChange}
         />
         <label
-          className={Styles.checkboxLabel}
+          className={Styles.CheckboxLabel}
           htmlFor={this.props.id}
         >
           <span>{this.props.label}</span>

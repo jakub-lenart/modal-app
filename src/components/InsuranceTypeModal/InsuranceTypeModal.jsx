@@ -3,9 +3,9 @@ import { InsuranceForm } from '..';
 import Styles from './InsuranceTypeModal.css';
 
 const InsuranceTypeModal = ({close}) => (
-  <div className={Styles.modal}>
+  <div className={Styles.Modal}>
     <button
-      className={Styles.modalClose}
+      className={Styles.ModalClose}
       onClick={close}
     ></button>
     <InsuranceForm />

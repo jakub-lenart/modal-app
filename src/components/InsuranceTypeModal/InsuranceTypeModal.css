@@ -1,4 +1,4 @@
-.modal {
+.Modal {
   position: absolute;
   width:  900px;
 	top: 10%;
@@ -7,10 +7,10 @@
 	color: #333;
 	padding: 20px 30px;
 	box-sizing: border-box;
-	z-index: 5;
+	z-index: 10;
 }
 
-.modalClose {
+.ModalClose {
   font-size: 0;
   position: absolute;
   top: 20px;
@@ -24,20 +24,20 @@
   transition: all 0.3s ease;
 }
 
-.modalClose:hover {
+.ModalClose:hover {
   background-color: rgba(0,0,0, 0.1);
   transform: rotate(135deg);
 }
 
-.modalClose:before,
-.modalClose:after {
+.ModalClose:before,
+.ModalClose:after {
   content: '';
   background-color: #000;
   position: absolute;
   display: block;
 }
 
-.modalClose:before {
+.ModalClose:before {
   width: 70%;
   height: 1px;
   top: 50%;
@@ -45,7 +45,7 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.modalClose:after {
+.ModalClose:after {
   width: 1px;
   height: 70%;
   top: 50%;

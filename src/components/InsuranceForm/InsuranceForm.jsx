@@ -57,7 +57,7 @@ class InsuranceForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <header className={Styles.formHeader}>
+        <header className={Styles.FormHeader}>
           <h3>Select the insurance:</h3>
         </header>
         {this.state.insuranceOptions && this.state.insuranceOptions.map((item) => {
@@ -72,7 +72,7 @@ class InsuranceForm extends Component {
             />
           )
         })}
-        <p className={Styles.total}>Total:
+        <p className={Styles.Total}>Total:
           <span>{`${this.state.totalPrice.toFixed(2)}€`}</span>
         </p>
         <Button

@@ -1,9 +1,9 @@
-.checkboxWrapper {
+.CheckboxWrapper {
   position: relative;
   margin-bottom: 25px;
 }
 
-.checkboxLabel {
+.CheckboxLabel {
   display: block;
   padding: 15px 50px;
   position: relative;
@@ -17,16 +17,16 @@
   cursor: pointer;
 }
 
-.checkboxWrapperActive,
-.checkboxLabel:hover {
+.CheckboxWrapperActive,
+.CheckboxLabel:hover {
   background-color: aliceblue;
 }
 
-.checkboxLabel span {
+.CheckboxLabel span {
   display: block;
 }
 
-.checkbox {
+.Checkbox {
   position: absolute;
   height: 20px;
   top: calc(50% - 10px);
@@ -35,7 +35,7 @@
   z-index: 5;
 }
 
-.price {
+.Price {
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: normal;

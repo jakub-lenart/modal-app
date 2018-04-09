@@ -1,13 +1,13 @@
-.formHeader {
+.FormHeader {
   text-align: center;
 }
 
-.total {
+.Total {
   font-size: 1.125rem;
   line-height: 1.25rem;
 }
 
-.total span {
+.Total span {
   font-size: 1.5rem;
   line-height: 1.625rem;
   font-weight: 700;

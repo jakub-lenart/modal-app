@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MainHeader, InsuranceTypeModal } from '.';
+import { MainHeader, InsuranceTypeModal, Overlay } from '.';
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +30,9 @@ class App extends Component {
             updateOption={this.toggleInsuranceOptions}
             close={this.hideModal}
           />
+        )}
+        {this.state.isModalVisible && (
+          <Overlay onClick={this.hideModal} />
         )}
         <MainHeader btnAction={this.showModal} />
       </main>
